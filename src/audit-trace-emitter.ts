@@ -5,7 +5,11 @@
 
 export interface AuditEventTrace {
   traceId: string;
-  eventType: "PAYMENT_AUTH" | "PAYMENT_VERIFIED" | "PAYMENT_SETTLED" | "AUTH_FAILED";
+  eventType:
+    | "PAYMENT_AUTH"
+    | "PAYMENT_VERIFIED"
+    | "PAYMENT_SETTLED"
+    | "AUTH_FAILED";
   timestamp: string;
   payerAddress?: string;
   amountUnits?: string;
